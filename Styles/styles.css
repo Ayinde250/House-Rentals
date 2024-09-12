@@ -155,7 +155,6 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 0px 4rem;
   background: #F2F0F2;
   border-radius: 0px 60px 60px 0px;
 
@@ -170,11 +169,12 @@ nav {
 
 .future_text p {
 
-  margin-top: 1.5rem;
+  width: 76%;
   font-family: "Lato", sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 1.5rem;
 
 } 
 
@@ -215,17 +215,17 @@ nav {
 
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
 
 }
 
 .feature_content .feature{
 
   width: 17rem;
-  height: 13.rem;
+  height: 14rem;
   background-color:#E2F1E8;
   border-radius: 30px 30px;
-  padding: 2em 2em;
+  padding: 2rem 2rem;
 
 }
 
@@ -251,10 +251,9 @@ nav {
  
   width: 100%;
   height: 100vh;
-  padding: 5rem 4rem;
+  padding: 3rem 4rem;
 
 }
-
 
 .location_title h1 {
 
@@ -274,34 +273,21 @@ nav {
 
 .locations {
 
-  width: 11rem;
-  height: 20rem;
-  padding-top: 1.75rem;
+  width: 12rem;
+  height: 16rem;
 
 }
 
-.locations1{
-
-  width: 11rem;
-  height: 20rem;
-
-}
-
-.locations1 .location_text h1{
-
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+.location_text {
+  width: 100%;
+  height: 25%;
 
 }
-.locations1 .location_img img {
+
+.location_img {
 
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 20px 20px 20px 20px;
-
+  height: 75%;
 }
 
 .location_text h1 {
@@ -309,7 +295,14 @@ nav {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+
+}
+
+.locations1 .location_text h1 {
+
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 
 }
 
@@ -317,15 +310,18 @@ nav {
 
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 20px 20px 20px 20px;
 }
 
 .button{
 
+  height: 20%;
   display:flex;
   justify-content: center;
+  align-items: center;
 }
+
 
 .button button{
 
@@ -373,7 +369,6 @@ nav {
   /* color: #fff; */
   padding-bottom: 1.5rem;
   
-
 }
 
 .partnership_content p {
@@ -385,7 +380,9 @@ nav {
   
 
 }
+
 .partnership_btn{
+
   padding-top: 3rem;
 }
 
@@ -744,7 +741,6 @@ text-align: center;
 .link_ul li a {
 
   font-size: 1.125em;
-
   color:#064749;
 
 }
@@ -903,31 +899,198 @@ color: #fff;
 
 }
 
-/* @media(max-width: 768px) {
+@media(max-width: 768px) {
 
-  #header .content .content_text {
-    padding: 0% 0%;
+  .future_text h1 {
+
+    font-size: 2rem;
   }
 
-  #future_section .future_content{
-    padding: 5% 10%;
-    display: flex; 
-    flex-direction: column;
+  .future_text p {
+
+    width: 85%;
+  }
+
+  #feature_section{
+
+    height: auto;
+    padding: 0rem 4rem;
+  
+  }
+
+  .feature_text h1{
+    padding: 0rem 1rem;
   } 
 
-  #future_section .future_content .future_text{
-    border-radius: 60px 0px 0px 60px;
-    padding: 0px 60px;
+  .feature_text p{
+
+    padding: 2rem 2rem;
+  }
+
+  .feature_content {
+    
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 0rem 0rem;
+  }
+
+  .feature_content .feature{
+
+    width: 28rem;
+  
+  }
+
+  #location_section {
+ 
+    height: 100%;
+  
+  }
+
+  .location_detail {
+
+    width: 100%;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .locations {
+
+    width: 16rem;
+    height: 14rem;
+
+  }
+
+  .location_text {
+  
+    height: 15%;
+  
   }
   
-  #feature_section .feature_text{
-    padding: 60px 0px;
+  .location_img {
+
+    height: 85%;
+
   }
 
-  #feature_section .feature_content .feature{
-    padding: 2% 1%;
-  } 
+  .button{
+
+    padding-top: 1.5rem;
+  }
+
+  #co_partnership {
+
+    height: 100%;
+
+  }
+
+  .cop_text p {
+
+    padding: 2rem 4rem;
+  
+  }
+
+  .cop_features {
+
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  #testimonial_section {
+
+    height: 100%;
+    padding: 0rem 0rem;
+  
+  }
+
+  .test_details {
+
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .test_item {
+
+    width: 35rem;
+
+  }
+
+  #blog {
+
+    height: 100%;
+  
+  }
+
+  .blog_items {
+
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .text1 h1, .text1_1 h1, .text1 p, .text1_1 p {
+
+    text-align: center;
+  
+  }
+  
+  .text2 {
+
+  width: 100%;
+  justify-content: center;
+
+  }
+
+  #links {
+
+  height: 100%;
+  
+  }
+
+  .link_ul {
+
+  grid-template-columns: repeat(1 , 1fr);
+
+  }
+
+  .dictum_text {
+
+    left: 25%;
+  }
+
+  #footer {
+
+  height: 100%;
+  padding: 3rem 2rem;
+  font-size: 0.75em;
+
+  }
+
+  .LHS input {
+
+    width: 15rem;
+  
+  }
+
+  .LHS_btn button{
+
+    width: 10rem;
+    height: 2rem;
+
+  }
+
+
 }
+
+
 
 @media(max-width: 429px){
   
@@ -1009,4 +1172,4 @@ color: #fff;
 
   }
 
-} */
+}
