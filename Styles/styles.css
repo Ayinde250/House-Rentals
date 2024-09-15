@@ -24,7 +24,7 @@ body {
 
   width: 100%;
   height: 13vh;
-  padding: 0.5rem 3.75rem;
+  padding: 0.5rem 4rem;
   z-index: 1;
 
 }
@@ -713,7 +713,7 @@ padding: 1rem 0rem;
 
   width: 100%;
   height: 60vh;
-  padding: 4rem 2rem;
+  padding: 4rem 4rem;
 }
 
 #links header h1 {
@@ -816,7 +816,7 @@ color: #fff;
 
   width: 100%;
   height: 40vh;
-  padding: 3rem 3rem;
+  padding: 3rem 4rem;
   line-height: 2rem;
 
 }
@@ -1152,26 +1152,24 @@ color: #fff;
 
   .nav_link.active {
 
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: #064749;
+    background-color: #fff;
     position: absolute;
-    top: 60px; /* Adjust based on your header height */
+    top: 13vh;
     left: 0;
 
   }
   
   .nav_link ul {
 
-    flex-direction: column;
     width: 100%;
-  
-  }
-
-  .nav_link li {
-    text-align: center;
-    padding: 15px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 10px;
+    padding-bottom: 10px;
   
   }
 
